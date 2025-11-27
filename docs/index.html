@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | word</title>
+    <title>Unity Web Player | WordGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">word</div>
+        <div id="unity-build-title">WordGame</div>
       </div>
     </div>
     <script>
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/docs .loader.js";
+      var loaderUrl = buildUrl + "/docs.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/docs .data.gz",
-        frameworkUrl: buildUrl + "/docs .framework.js.gz",
-        codeUrl: buildUrl + "/docs .wasm.gz",
+        dataUrl: buildUrl + "/docs.data",
+        frameworkUrl: buildUrl + "/docs.framework.js",
+        codeUrl: buildUrl + "/docs.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "word",
-        productVersion: "1.0",
+        companyName: "BahadirKus",
+        productName: "WordGame",
+        productVersion: "1.0.0",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
