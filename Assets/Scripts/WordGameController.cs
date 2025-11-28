@@ -25,6 +25,8 @@ public class WordGameController : MonoBehaviour
     private int currentLevelIndex;
     private string currentAnswer;
     private readonly List<AnswerSlot> answerSlots = new List<AnswerSlot>();
+    private bool isAdvancingToNextLevel = false;
+
 
     private void Start()
     {
@@ -101,6 +103,7 @@ public class WordGameController : MonoBehaviour
             slot.Initialize(this, i);
             answerSlots.Add(slot);
         }
+        isAdvancingToNextLevel = false;
     }
 
     // ----------- Keyboard & slot interaction -----------
@@ -132,6 +135,9 @@ public class WordGameController : MonoBehaviour
 
     public void SubmitAnswer()
     {
+        if (isAdvancingToNextLevel)
+        return;
+
         string playerAnswer = string.Empty;
 
         foreach (AnswerSlot slot in answerSlots)
@@ -141,6 +147,7 @@ public class WordGameController : MonoBehaviour
         {
             ShowFeedback("PERFECT!", Color.green);
             SaveManager.SaveProgress(currentLevelIndex + 1);
+            isAdvancingToNextLevel = true;
             Invoke(nameof(GoToNextLevel), 1.2f);
         }
         else
