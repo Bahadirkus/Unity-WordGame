@@ -1,10 +1,21 @@
+<div align="center">
+
 # Unity Word Game
+
+![Unity](https://img.shields.io/badge/Unity-2021%2B-000000?style=for-the-badge&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![License](https://img.shields.io/github/license/Bahadirkus/Unity-WordGame?style=for-the-badge&color=blue)
+![Repo Size](https://img.shields.io/github/repo-size/Bahadirkus/Unity-WordGame?style=for-the-badge&color=orange)
+![Last Commit](https://img.shields.io/github/last-commit/Bahadirkus/Unity-WordGame?style=for-the-badge&color=red)
+
+<br/>
 
 A lightweight word‑guessing game built with **Unity**.  
 Designed as a clean, readable project to demonstrate coding style, UI workflow, ScriptableObjects, and general Unity architecture.
 
-## 🎮 Play the Web Demo
-👉 **https://bahadirkus.github.io/Unity-WordGame/**
+[![Play Demo](https://img.shields.io/badge/🎮_Play_Web_Demo-Click_Here-2ea44f?style=for-the-badge)](https://bahadirkus.github.io/Unity-WordGame/)
+
+</div>
 
 ---
 
@@ -20,7 +31,7 @@ Designed as a clean, readable project to demonstrate coding style, UI workflow, 
 ---
 
 ## 🧩 Project Structure
-```
+```text
 Assets/
  ├─ Scripts/
  │   ├─ WordGameController.cs
@@ -32,31 +43,3 @@ Assets/
  ├─ Prefabs/
  ├─ UI/
  └─ Levels/
-```
-
-## Screenshot
-<img src="docs/screenshot.png" width="350" />
-
-
----
-
-## 🚀 Technologies Used
-- **Unity 2021+**
-- **C#**
-- **ScriptableObjects**
-- **Unity UI (uGUI)**
-- **WebGL**
-
----
-
-## 📱 Mobile Note
-This project was originally designed for mobile.  
-UI elements scale automatically on desktop but will appear spaced out because of the large aspect ratio.  
-This is normal and not a bug.
-
----
-
-## 👤 Author
-**Bahadır Kuş**  
-Simulation Developer & Unity Developer  
-GitHub: https://github.com/Bahadirkus
